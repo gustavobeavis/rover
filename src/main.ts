@@ -18,6 +18,7 @@ process.stdin.on('end', function (): void {
   }
   inputString = '';
 
+  // eslint-disable-next-line @typescript-eslint/no-use-before-define
   main();
 });
 
@@ -25,7 +26,7 @@ process.stdin.on('end', function (): void {
  * Main function
  * @returns {void}
  */
-export function main() {
+export function main(): void {
   const { rovers } = parser(inputLines);
 
   rovers.forEach(rover => {

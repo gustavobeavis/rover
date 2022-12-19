@@ -82,3 +82,69 @@ MMRMMRMRRM
 1 3 N
 5 1 E
 ```
+
+## Solution
+
+To solve the problem, it was necessary to isolate the problem into three large blocks, the first being the commands, as it is the rover's movement module [ref](https://refactoring.guru/design-patterns/command). 
+
+With the part of coordinates and directions resolved, the next step would be to encapsulate a rover, which contains the module of coordinates and directions. And finally, the parser module that translates the input content and converts it into rovers and rover execution by rover.
+
+## Run
+
+### Step 1: Install
+
+first of all, you need to install dependencies.
+
+```sh
+npm install
+```
+### Step 2: Build
+
+The build from ts to js.
+
+```sh
+npm run build
+```
+
+The output files at `./dist`
+
+### Step 3: Tests
+
+The project is instrumented with Jest for the unit tests of the modules so that for each class/function, there is a test, and it is executed in the structure of TDD.
+
+```sh
+npm run test
+```
+
+The pattern is `*.spec.ts` near the file. eg: `foo.ts` has a test next `foo.spec.ts` 
+
+### Step 4: Run
+
+The project was thought to run as a CLI, so to initialize it, just run the command below.
+
+```sh
+npm start
+```
+
+After that, copy and paste the instructions, and after copying and pasting, or typing, just press `CTRL + D` to close the input blocks and run the project.
+
+eg:  paste this text
+```txt
+5 5
+1 2 N
+LMLMLMLMM
+3 3 E
+MMRMMRMRRM
+```
+
+after that
+```sh
+CTRL + D //in your terminal
+```
+
+if it's ok, after you do `CTRL + D`, you can see:
+
+```sh
+1 3 N
+5 1 E
+```

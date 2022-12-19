@@ -1,8 +1,14 @@
 {
   "name": "mars-rover",
   "version": "1.0.0",
-  "description": "",
+  "description": "Mars Rover Challenge",
   "main": "index.js",
+  "authors": [
+    {
+      "name": "Gustavo S. Rodrigues",
+      "email": "gustavo.s.rodrigues.dev@gmail.com"
+    }
+  ],
   "scripts": {
     "build": "tsc",
     "test": "jest --coverage ",
@@ -16,8 +22,13 @@
     "lint:fix": "npm run lint:format:fix && npm run lint:style:fix",
     "lint": "npm run lint:format && npm run lint:style"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Gustavo S. Rodrigues",
+  "directories": {
+    "doc": "docs",
+    "man": "src",
+    "bin": "dist"
+  },
+  "license": "MIT",
   "devDependencies": {
     "@types/jest": "^29.2.4",
     "@types/node": "^18.11.17",
