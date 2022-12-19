@@ -44,6 +44,7 @@ export class Rover {
    * @param {string} commands
    * @returns {string} coordinate
    * @throws {Error} Unknown command
+   * @throws {Error} Rover is out of the plateau
    */
   execute(commands: string): string {
     commands.split('').forEach(command => {

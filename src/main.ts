@@ -1,4 +1,6 @@
 'use strict';
+import { parser } from './parser';
+
 process.stdin.resume();
 process.stdin.setEncoding('utf-8');
 
@@ -19,10 +21,14 @@ process.stdin.on('end', function (): void {
   main();
 });
 
-function roverRun(inputLines: string[]) {
-  return '1 3 N\n5 1 E';
+funtion roverRun(inputLines: string[]) {
+  const { rovers } = parser(inputLines);
 }
 
 export function main() {
-  return roverRun(inputLines);
+  const { rovers } = parser(inputLines);
+
+  rovers.forEach(rover => {
+    console.log(rover.result);
+  });
 }
