@@ -2,6 +2,10 @@ mars-rover / [Exports](modules.md)
 
 # Test Rover
 
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/9270dfe6a051467dabab972a1bfdb2ab)](https://www.codacy.com/gh/gustavobeavis/rover/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=gustavobeavis/rover&amp;utm_campaign=Badge_Grade)
+
+[![Codacy Badge](https://app.codacy.com/project/badge/Coverage/9270dfe6a051467dabab972a1bfdb2ab)](https://www.codacy.com/gh/gustavobeavis/rover/dashboard?utm_source=github.com&utm_medium=referral&utm_content=gustavobeavis/rover&utm_campaign=Badge_Coverage)
+
 ## Description
 
 We are assessing a number of things, including the design aspect of
@@ -88,6 +92,10 @@ MMRMMRMRRM
 To solve the problem, it was necessary to isolate the problem into three large blocks, the first being the commands, as it is the rover's movement module [ref](https://refactoring.guru/design-patterns/command). 
 
 With the part of coordinates and directions resolved, the next step would be to encapsulate a rover, which contains the module of coordinates and directions. And finally, the parser module that translates the input content and converts it into rovers and rover execution by rover.
+
+### Docs
+
+you can see more  about the functions and strcutre at [mars-rover](./docs/modules.md)
 
 ## Run
 

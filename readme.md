@@ -1,5 +1,9 @@
 # Test Rover
 
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/9270dfe6a051467dabab972a1bfdb2ab)](https://www.codacy.com/gh/gustavobeavis/rover/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=gustavobeavis/rover&amp;utm_campaign=Badge_Grade)
+
+[![Codacy Badge](https://app.codacy.com/project/badge/Coverage/9270dfe6a051467dabab972a1bfdb2ab)](https://www.codacy.com/gh/gustavobeavis/rover/dashboard?utm_source=github.com&utm_medium=referral&utm_content=gustavobeavis/rover&utm_campaign=Badge_Coverage)
+
 ## Description
 
 We are assessing a number of things, including the design aspect of
