@@ -10,6 +10,9 @@ import { Rover } from './rover';
  * @throws {Error} if rover is out of the plateau
  */
 export function parser(inputLines: string[]) {
+  /**
+   * map of directions that can be used to create a rover
+   */
   const directionMap = new Map([
     ['N', new North()],
     ['S', new South()],
@@ -21,6 +24,9 @@ export function parser(inputLines: string[]) {
   const y: number = parseInt(grid.split(' ')[1]);
 
   const rovers = [];
+  /**
+   * make rovers and execute commands listed in inputLines
+   */
   for (let index = 2; index <= inputLines.length; index = index + 2) {
     const roverPosition: string = inputLines[index - 1].trim();
     const roverDirection: Direction =

@@ -1,5 +1,5 @@
 'use strict';
-import { parser } from './parser';
+import { parser } from './';
 
 process.stdin.resume();
 process.stdin.setEncoding('utf-8');
@@ -21,10 +21,10 @@ process.stdin.on('end', function (): void {
   main();
 });
 
-funtion roverRun(inputLines: string[]) {
-  const { rovers } = parser(inputLines);
-}
-
+/**
+ * Main function
+ * @returns {void}
+ */
 export function main() {
   const { rovers } = parser(inputLines);
 
