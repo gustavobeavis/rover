@@ -38,4 +38,29 @@ export class Rover {
   private move() {
     this.coordinate = this.direction.move(this.coordinate);
   }
+
+  /**
+   * Execute commands
+   * @param {string} commands
+   * @returns {string} coordinate
+   * @throws {Error} Unknown command
+   */
+  execute(commands: string): string {
+    commands.split('').forEach(command => {
+      const exec = this.commands[command];
+      if (exec === undefined) {
+        throw new Error(`Unknown command ${command}`);
+      }
+
+      exec();
+    });
+
+    if(this.coordinate.x < 0 || this.coordinate.y < 0) {
+      throw new Error('Rover is out of the plateau');
+    }
+
+    return `${this.coordinate.x} ${
+      this.coordinate.y
+    } ${this.direction.toString()}`;
+  }
 }
